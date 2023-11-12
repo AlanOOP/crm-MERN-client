@@ -43,7 +43,7 @@ const Producto = ({ producto }) => {
         <li className="producto">
             <div className="info-producto">
                 <p className="nombre">{nombre}</p>
-                <p className="precio">{precio} </p>
+                <p className="precio">${precio} </p>
                 <img src={`${import.meta.env.VITE_BACKEND_URL}/uploads/${imagen}`} />
             </div>
             <div className="acciones">

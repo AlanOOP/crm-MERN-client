@@ -207,6 +207,45 @@ h2 {
   border-radius: 1rem;
 }
 
+.contenido-form{
+  background-color: white;
+  padding: 2rem 3rem;
+  padding: 2rem 3rem;
+  min-height: 30rem;
+  -webkit-box-shadow: 0px 7px 6px -5px rgba(0,0,0,0.36);
+  -moz-box-shadow: 0px 7px 6px -5px rgba(0,0,0,0.36);
+  box-shadow: 0px 7px 6px -5px rgba(0,0,0,0.36);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+.contenido-form button{
+  margin-top: 2rem;
+  padding: 0;
+}
+
+.alerta-error{
+  background-color: #FED7D7; /* bg-red-100 */
+  border-left-width: 1px; /* border-l-4 */
+  border-left: .5rem solid #C53030;
+  color: #C53030; /* text-red-700 */
+  padding: 1rem; /* p-4 */
+  margin-bottom: 2rem; /* mb-5 */
+}
+
+.link{
+  color: var(--azul);
+  font-weight: 700;
+  text-decoration: underline;
+  margin-left: 1rem;
+}
+
+.m-2{
+  margin-bottom: 2rem;
+}
+
 /** Mostrar Clientes **/
 .listado-clientes,
 .listado-productos,

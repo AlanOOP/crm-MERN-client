@@ -5,7 +5,7 @@ import clienteAxios from '../config/clienteAxios';
 import { useNavigate, useParams } from 'react-router-dom';
 import BusquedaProductos from '../components/BusquedaProductos';
 import ResumenProductos from '../components/ResumenProductos';
-import { formatearDinero } from '../../helpers';
+import { formatearDinero } from '../helpers';
 import Swal from 'sweetalert2';
 
 

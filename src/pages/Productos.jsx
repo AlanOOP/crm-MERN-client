@@ -16,7 +16,7 @@ const Productos = () => {
 
     useEffect(() => {
         consultarAPI();
-    }, [productos]);
+    }, []);
 
     return (
         <Layout>

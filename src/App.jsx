@@ -9,8 +9,11 @@ import Productos from './pages/Productos';
 import NuevoProducto from './pages/NuevoProducto';
 import EditarProducto from './pages/EditarProducto';
 import NuevoPedido from './pages/NuevoPedido';
+import Login from './auth/Login';
+import Registro from './pages/Registro';
 
 import Pedidos from './pages/Pedidos';
+import { CRMProvider } from './context/CRMProvider';
 
 function App() {
 
@@ -18,6 +21,8 @@ function App() {
   return (
     <>
       <BrowserRouter>
+
+          <CRMProvider>
         <Routes>
           <Route index path='/' element={<HomePage />} />
           <Route path='/nuevo-cliente' element={<NuevoCliente />} />
@@ -31,8 +36,13 @@ function App() {
 
           <Route path='/pedidos' element={<Pedidos />} />
 
+          <Route path='/login' element={ <Login/> }/>
+          <Route path='/register' element={ <Registro/> }/>
+
           <Route path='*' element={<h1>404 Not Found</h1>} />
+        
         </Routes>
+          </CRMProvider>
       </BrowserRouter>
 
     </>
